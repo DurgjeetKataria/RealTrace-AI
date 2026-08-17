@@ -1,1 +1,1 @@
-image_id,label,generator,generator_type,source_dataset,split,file_path
+image_id,label,generator,generator_type,source_dataset,source_split,evaluation_group,file_path
