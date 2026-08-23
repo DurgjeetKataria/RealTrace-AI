@@ -32,7 +32,7 @@ if uploaded_file is not None:
     st.image(
         uploaded_file,
         caption="Uploaded Image",
-        use_container_width=True
+        width="stretch"
     )
 
     st.write(f"File name: `{uploaded_file.name}`")
