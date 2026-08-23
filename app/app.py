@@ -93,23 +93,23 @@ if uploaded_file is not None:
                     if result.model_name:
                         st.caption(
                             f"Model: {result.model_name}"
-                        )
+                     )
 
-                    report_path = generate_report(
-                        filename=uploaded_file.name,
-                        prediction=result.prediction,
-                        confidence=result.confidence,
-                        probabilities=result.probabilities,
-                        model_name=result.model_name
+                report_path = generate_report(
+                    filename=uploaded_file.name,
+                    prediction=result.prediction,
+                    confidence=result.confidence,
+                    probabilities=result.probabilities,
+                    model_name=result.model_name
+                )
+
+                with open(report_path, "rb") as report_file:
+                    st.download_button(
+                        label="📄 Download Analysis Report",
+                        data=report_file,
+                        file_name=report_path.name,
+                        mime="text/plain"
                     )
-
-                    with open(report_path, "rb") as report_file:
-                        st.download_button(
-                            label="📄 Download Analysis Report",
-                            data=report_file,
-                            file_name=report_path.name,
-                            mime="text/plain"
-                        )
 
             except NotImplementedError:
                 st.warning(
@@ -117,5 +117,6 @@ if uploaded_file is not None:
                     "The trained AI model is still being integrated."
                 )
 
+                
             except Exception as e:
                 st.error(f"An error occurred during analysis: {e}")
