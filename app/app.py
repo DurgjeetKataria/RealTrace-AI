@@ -8,7 +8,7 @@ from PIL import Image
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from inference import ModelInference
+from app.inference import ModelInference
 from reports.report_generator import generate_report
 
 

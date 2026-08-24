@@ -248,3 +248,8 @@ for epoch in range(num_epochs):
 # ==================================================
 
 print("\nTraining completed.")
+
+# Save trained model
+torch.save(model.state_dict(), "tiny_cnn.pth")
+
+print("Model saved as tiny_cnn.pth")
