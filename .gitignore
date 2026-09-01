@@ -1,5 +1,41 @@
+# Virtual environment
 .venv/
+
+# Python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environment / secrets
 .env
+.env.*
+HF_TOKEN
+
+# Datasets
+data/raw/
+data/processed/
+data/external_unseen/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Hugging Face / cache
+.cache/
+huggingface/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
