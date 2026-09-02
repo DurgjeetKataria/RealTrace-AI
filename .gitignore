@@ -1,7 +1,7 @@
 # Virtual environment
 .venv/
 
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -13,7 +13,7 @@ __pycache__/
 .env.*
 HF_TOKEN
 
-# Datasets
+# Large datasets
 data/raw/
 data/processed/
 data/external_unseen/
@@ -23,7 +23,7 @@ data/external_unseen/
 *.pth
 *.ckpt
 
-# Hugging Face / cache
+# Hugging Face / caches
 .cache/
 huggingface/
 
