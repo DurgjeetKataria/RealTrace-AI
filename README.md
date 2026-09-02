@@ -400,6 +400,17 @@ B.Tech Computer Science Engineering ( CyberSecurity )Final-Year Project
 
 ---
 
+## 👥 Team Members
+
+RealTrace AI was developed as a B.Tech Computer Science Engineering (Cybersecurity) Final-Year Project by:
+
+| Team Member |
+|---|
+| **Durgjeet Kataria** |
+| **Jay Kumar** |
+| **Ankur Tetarwal** |
+| **Gaurav Singh Solanki** |
+
 ## 🔮 Future Scope
 
 Potential future improvements include:
