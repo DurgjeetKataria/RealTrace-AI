@@ -396,7 +396,7 @@ RealTrace AI: A Generalizable Forensic Intelligence Framework for Authenticity V
 Artificial Intelligence / Machine Learning / Computer Vision / Digital Forensics / Cybersecurity / Image Processing
 
 **Project Type:**  
-B.Tech Computer Science Engineering Final-Year Project
+B.Tech Computer Science Engineering ( CyberSecurity )Final-Year Project
 
 ---
 
