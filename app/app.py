@@ -5,16 +5,14 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from PIL import Image
 
-# Allow imports from project root
+
 sys.path.append(os.path.abspath("."))
 
 from src.inference.analyze_image import analyze_image
 from src.reporting.report_generator import generate_report
 
 
-# ---------------------------------------------------------------------------
-# Page configuration
-# ---------------------------------------------------------------------------
+
 st.set_page_config(
     page_title="RealTrace AI | Forensic Verification",
     page_icon="🔍",
@@ -23,9 +21,7 @@ st.set_page_config(
 )
 
 
-# ---------------------------------------------------------------------------
-# Model registry (checkpoint mapping preserved exactly)
-# ---------------------------------------------------------------------------
+
 MODEL_OPTIONS = {
     "Baseline CNN": "checkpoints/baseline_best.pt",
     "ResNet18": "checkpoints/resnet18_best.pt",
@@ -34,9 +30,7 @@ MODEL_OPTIONS = {
 }
 
 
-# ---------------------------------------------------------------------------
-# Design system (dark forensic-workstation theme)
-# ---------------------------------------------------------------------------
+
 def inject_styles() -> None:
     st.markdown(
         """
@@ -158,9 +152,7 @@ def inject_styles() -> None:
     )
 
 
-# ---------------------------------------------------------------------------
-# Small UI helpers
-# ---------------------------------------------------------------------------
+
 def metric_card(label: str, value, class_name: str = "") -> None:
     st.markdown(
         f"""
@@ -200,9 +192,7 @@ def card_close() -> None:
     st.markdown("</div>", unsafe_allow_html=True)
 
 
-# ---------------------------------------------------------------------------
-# Layout blocks
-# ---------------------------------------------------------------------------
+
 def render_sidebar() -> str:
     with st.sidebar:
         st.markdown(
@@ -393,9 +383,7 @@ def render_footer() -> None:
     )
 
 
-# ---------------------------------------------------------------------------
-# Application
-# ---------------------------------------------------------------------------
+
 inject_styles()
 
 selected_model = render_sidebar()
